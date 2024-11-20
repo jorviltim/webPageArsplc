@@ -1,0 +1,101 @@
+*{ /*para que no hayan padings o margenes salvo que se pidan dentro de cada clase*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    /*width: 70%;*/
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+  
+}
+/*____________________________________ENCABEZADO ____________________________________________________*/
+header{
+    background: red;
+    height: 100px;
+    width: 100%;
+    text-align: center;/* para centrar texto al medio*/
+    line-height: 100px ;/*para centrarlo de arriba a bajo el texto en el headder*/
+    color: white;
+    border-bottom: 3px dashed black;
+
+}
+/*____________________________________MENU ____________________________________________________*/
+
+nav ul li{
+    float: left;/*sube los elementos y los posiciona en una linea la lista */
+    list-style: none;/* quita los puntos de las listas */ 
+    margin: 10px; /*da margen entre las listas */
+    line-height: 30px;
+    
+}
+
+nav{
+    
+background: lightblue;
+height: 50px;
+border-bottom: 1px solid black;
+}
+
+.clearfix{ /*para separar elementos de la caja nav que se pegaban al nav*/
+clear: both;
+}
+
+/*_____________________________________SECTIONS___________________________________________________*/
+#content{
+    float: left;
+    width: calc(80% - 80px);/* para quitarle al margen 40 de padding a cada lado = 80 px */
+    background: green;
+    min-height: 500px;
+    padding: 40px;
+}
+
+/*_____________________________________ARTICULOS___________________________________________________*/
+
+.article{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+
+
+}
+
+.article:first-child{
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+
+}
+
+.article h2{
+    font-size: 25px;
+}
+
+/*____________________________________BARRA LATERAL____________________________________________________*/
+
+aside{
+    float: left;
+    width: calc(20% - 20px);/* para quitarle al margen 10 de padding a cada lado = 20 px */
+    background: orange;
+    min-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+/*____________________________________FOOTER____________________________________________________*/
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;/*centrar texto*/
+}
